@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.34909.67
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hoskes.UserAuthorization", "Hoskes.UserAuthorization\Hoskes.UserAuthorization.csproj", "{435A169D-DF49-4205-8E38-59FD6E121E3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hoskes.Account.Core", "Hoskes.Account.Core\Hoskes.Account.Core.csproj", "{C6CEB577-0F69-45C3-9901-6E12F17A0F48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{435A169D-DF49-4205-8E38-59FD6E121E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435A169D-DF49-4205-8E38-59FD6E121E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435A169D-DF49-4205-8E38-59FD6E121E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435A169D-DF49-4205-8E38-59FD6E121E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6CEB577-0F69-45C3-9901-6E12F17A0F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6CEB577-0F69-45C3-9901-6E12F17A0F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6CEB577-0F69-45C3-9901-6E12F17A0F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6CEB577-0F69-45C3-9901-6E12F17A0F48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9038414-493F-496B-AE21-8B759E3D04D9}
+	EndGlobalSection
+EndGlobal
