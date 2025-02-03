@@ -64,12 +64,19 @@ Important: The library "Microsoft.EntityFrameworkCore" will be necessary for thi
 If you're using Mysql, "MySql.EntityFrameworkCore" will be also necessary
 
 ```csharp
-builder.Services.AddDbContext<HoskesGatewayContext>(options =>
-    options.UseMySQL(builder.Configuration.GetConnectionString("HoskesGatewayContext") ?? throw new InvalidOperationException("Connection string 'HoskesGatewayContext' not found.")));
+builder.Services.AddDbContext<HoskesAuthContext>(options =>
+    options.UseMySQL(builder.Configuration.GetConnectionString("HoskesAuthContext") ?? throw new InvalidOperationException("Connection string 'HoskesAuthContext' not found.")));
+```
+**4. Configure Connection String:**
+In your appsettings.json add your Connection String with the following structure
+
+```json
+"ConnectionStrings": {
+	"HoskesAuthContext": "Server=127.0.0.1;Database=dbName;Uid=dbUsername;Pwd=dbPassword;"
+}
 ```
 
-
-**4. Configure Authentication:**
+**5. Configure Authentication:**
 
 Ensure that authentication services are configured in your main project:
 
@@ -82,7 +89,7 @@ services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
         });
 ```
 
-**5. Apply Migrations:**
+**6. Apply Migrations:**
 
 The Razor Class Library includes an EF Core Context, apply it to your database:
 
@@ -95,7 +102,7 @@ The Razor Class Library includes an EF Core Context, apply it to your database:
   dotnet ef database update
   ```
 
-**6. Access Pages:**
+**7. Access Pages:**
 
 You can now access the following pages provided by the Razor Class Library:
 

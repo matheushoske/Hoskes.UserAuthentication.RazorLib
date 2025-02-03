@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Hoskes.Account.Core;
 
-    public class HoskesGatewayContext : DbContext
-    {
-        public HoskesGatewayContext (DbContextOptions<HoskesGatewayContext> options)
+    public class HoskesAuthContext : DbContext
+    {   
+        public HoskesAuthContext(DbContextOptions<HoskesAuthContext> options)
             : base(options)
         {
         }
